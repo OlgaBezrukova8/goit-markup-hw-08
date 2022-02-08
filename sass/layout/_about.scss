@@ -1,0 +1,43 @@
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item--append {
+  margin-right: 30px;
+}
+
+.about__item--preperend {
+  margin-right: 0;
+}
+
+.svg-box {
+  @extend %flex-align;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: $background-btn-color;
+  border-radius: $primary-border-radius;
+}
+
+.about__title {
+  margin-bottom: 10px;
+
+  @include font($font-w: 700, $line-h: 1.14);
+  text-transform: $primary-text-transform;
+}
+
+.about__text {
+  line-height: 1.5;
+
+  color: $paragraph-color;
+}

@@ -1,0 +1,31 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/mixins";
+@import "./utils/hidden";
+@import "./utils/placeholders";
+
+// COMPONENTS
+
+@import "./components/container";
+@import "./components/modal";
+
+@import "./components/footer-form";
+
+// LAYOUT
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/activity";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+
+// page portfolio
+
+@import "./layout/portfolio";
+
+// MOBILE MENU
+
+@import "../js/mobile-menu.js";

@@ -1,0 +1,42 @@
+.activity {
+  padding-top: 0;
+}
+
+.activity__title {
+  margin-bottom: 50px;
+
+  @include font($font-s: 36px, $letter-s: null, $line-h: 1.17);
+  text-align: center;
+}
+
+.activity__list {
+  @extend %flex-align;
+}
+
+.activity__item--append {
+  margin-right: 30px;
+}
+
+.activity__item--prepend {
+  margin-right: 0;
+}
+
+.picture-box {
+  position: relative;
+}
+
+.picture__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 27px;
+
+  @include font($line-h: 1.14);
+  text-align: center;
+  text-transform: $primary-text-transform;
+
+  color: $primary-white-color;
+  background: rgba(47, 48, 58, 0.8);
+}
