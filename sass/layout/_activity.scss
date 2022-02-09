@@ -1,42 +1,63 @@
 .activity {
-  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 .activity__title {
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
 
-  @include font($font-s: 36px, $letter-s: null, $line-h: 1.17);
-  text-align: center;
+    @include font($font-s: 36px, $letter-s: null, $line-h: 1.17);
+    text-align: center;
+  }
 }
 
 .activity__list {
-  @extend %flex-align;
+  @media screen and (min-width: 1200px) {
+    //fix with @extend
+    display: flex;
+    align-items: center;
+  }
 }
 
 .activity__item--append {
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 
 .activity__item--prepend {
-  margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
 
 .picture-box {
-  position: relative;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
 }
 
 .picture__text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-  width: 100%;
-  padding: 27px;
+    width: 100%;
+    padding: 27px;
 
-  @include font($line-h: 1.14);
-  text-align: center;
-  text-transform: $primary-text-transform;
+    @include font($line-h: 1.14);
+    text-align: center;
+    text-transform: $primary-text-transform;
 
-  color: $primary-white-color;
-  background: rgba(47, 48, 58, 0.8);
+    color: $primary-white-color;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
