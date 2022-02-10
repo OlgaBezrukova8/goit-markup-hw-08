@@ -3,29 +3,78 @@
   padding-bottom: 60px;
 
   background-color: $accent-background-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 72px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    padding-right: 89px;
+    padding-left: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.footer-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-address:not(:last-child) {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .logo--inverse {
   margin-bottom: 20px;
+  text-align: center;
 
   color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .logo__text--accent-color {
   color: $accent-color;
 }
 
+.footer-address__list {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
+
 .footer-address__item--append {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-address__link {
@@ -36,6 +85,9 @@
 
   &:focus {
     color: $accent-color;
+  }
+  @media screen and (min-width: 1200px) {
+    white-space: nowrap;
   }
 }
 
@@ -50,12 +102,10 @@
   }
 }
 
-.footer-social {
-  margin-right: 93px;
-}
-
 .footer-social__text {
   margin-bottom: 20px;
+
+  text-align: center;
 
   font-weight: $primary-font-weight;
   line-height: 16px;
@@ -63,11 +113,21 @@
   text-transform: $primary-text-transform;
 
   color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-social__list {
   display: flex;
   justify-content: center;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-social__item--append {

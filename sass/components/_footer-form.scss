@@ -1,13 +1,30 @@
 .footer-form-box {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.footer-form-box--uppend {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .footer-form {
-  margin-right: 12px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-content: start;
+  }
 }
 
 .footer-form__label {
   margin-bottom: 20px;
+
+  text-align: center;
 
   font-weight: $primary-font-weight;
   font-size: $primary-font-size;
@@ -16,14 +33,19 @@
   text-transform: $primary-text-transform;
 
   color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-form__input {
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
+  margin-bottom: 20px;
 
-  width: 358px;
+  width: 100%;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -39,15 +61,24 @@
   &:focus {
     border-color: $header-border;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .button-box {
-  display: flex;
-  align-items: flex-end;
+  text-align: center;
 }
 
 .button--styles {
   @extend %flex-align;
+  margin: 0 auto;
 
   padding: 10px 29px;
 
@@ -56,6 +87,10 @@
   &:hover,
   &:focus {
     background-color: $background-accent-btn;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 

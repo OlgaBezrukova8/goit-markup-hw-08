@@ -149,35 +149,65 @@
           <ul class="list activity__list">
             <li class="activity__item activity__item--append">
               <div class="picture-box">
-                <img
-                  class="picture__image"
-                  src="./images/img-1.jpg"
-                  alt="Человек печатает на клавиатуре"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop1200@2x.webp 2x,
+                      ./images/desktop.jpg         1x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="picture__image"
+                    src="./images/desktop.jpg"
+                    alt="Человек печатает на клавиатуре"
+                    width="370"
+                  />
+                </picture>
                 <p class="picture__text">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="activity__item activity__item--append">
               <div class="picture-box">
-                <img
-                  class="picture__image"
-                  src="./images/img-2.jpg"
-                  alt="Человек использует телефон и ноутбук"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile1200@2x.webp 2x,
+                      ./images/mobile.jpg         1x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="picture__image"
+                    src="./images/mobile.jpg"
+                    alt="Человек использует телефон и ноутбук"
+                    width="370"
+                  />
+                </picture>
                 <p class="picture__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="activity__item activity__item--prepend">
               <div class="picture-box">
-                <img
-                  class="picture__image"
-                  src="./images/img-3.jpg"
-                  alt="Планшет, на котором изображена цветовая палитра"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/designe1200@2x.webp 2x,
+                      ./images/designe.jpg         1x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="picture__image"
+                    src="./images/designe.jpg"
+                    alt="Цветовая палитра"
+                    width="370"
+                  />
+                </picture>
                 <p class="picture__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -192,12 +222,42 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item team__item--append">
-              <img
-                class="team__image"
-                src="./images/img-4.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/demyanenko1200@2x.webp 2x,
+                    ./images/demyanenko1200.jpg     1x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/demyanenko768@2x.webp 2x,
+                    ./images/demyanenko768.jpg     1x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/demyanenko480@2x.webp 2x,
+                    ./images/demyanenko480.jpg     1x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__image"
+                  src="./images/demyanenko480.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
+
               <div class="social-networks">
                 <h3 class="social-networks__title">Игорь Демьяненко</h3>
                 <p class="social-networks__text" lang="en">Product Designer</p>
@@ -256,12 +316,41 @@
             </li>
 
             <li class="team__item team__item--append">
-              <img
-                class="team__image"
-                src="./images/img-5.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/repina1200@2x.webp 2x,
+                    ./images/repina1200.jpg     1x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/repina768@2x.webp 2x,
+                    ./images/repina768.jpg     1x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/repina480@2x.webp 2x,
+                    ./images/repina480.jpg     1x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__image"
+                  src="./images/repina480.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+              </picture>
               <div class="social-networks">
                 <h3 class="social-networks__title">Ольга Репина</h3>
                 <p class="social-networks__text" lang="en">
@@ -322,12 +411,41 @@
             </li>
 
             <li class="team__item team__item--append">
-              <img
-                class="team__image"
-                src="./images/img-6.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/tarasov1200@2x.webp 2x,
+                    ./images/tarasov1200.jpg     1x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/tarasov768@2x.webp 2x,
+                    ./images/tarasov768.jpg     1x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/tarasov480@2x.webp 2x,
+                    ./images/tarasov480.jpg     1x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__image"
+                  src="./images/tarasov480.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                />
+              </picture>
               <div class="social-networks">
                 <h3 class="social-networks__title">Николай Тарасов</h3>
                 <p class="social-networks__text" lang="en">Marketing</p>
@@ -386,12 +504,41 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/img-7.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ermakov1200@2x.webp 2x,
+                    ./images/ermakov1200.jpg     1x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/ermakov768@2x.webp 2x,
+                    ./images/ermakov768.jpg     1x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/ermakov480@2x.webp 2x,
+                    ./images/ermakov480.jpg     1x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__image"
+                  src="./images/ermakov480.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                />
+              </picture>
               <div class="social-networks">
                 <h3 class="social-networks__title">Михаил Ермаков</h3>
                 <p class="social-networks__text" lang="en">UI Designer</p>
@@ -501,92 +648,94 @@
 
     <!-- footer -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <div class="footer-address">
-          <a class="link logo logo--inverse" href="/index.html"
-            ><span class="logo__text logo__text--accent-color">Web</span
-            >Studio</a
-          >
+        <div class="footer-box">
+          <div class="footer-address">
+            <a class="link logo logo--inverse" href="/index.html"
+              ><span class="logo__text logo__text--accent-color">Web</span
+              >Studio</a
+            >
 
-          <address class="footer-address__address">
-            <ul class="list footer-address__list">
-              <li class="footer-address__item footer-address__item--append">
-                <a
-                  class="link footer-address__link footer-address__link--light-color"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://goo.gl/maps/jbVV8wjMCnb47XMv7"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+            <address class="footer-address__address">
+              <ul class="list footer-address__list">
+                <li class="footer-address__item footer-address__item--append">
+                  <a
+                    class="link footer-address__link footer-address__link--light-color"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://goo.gl/maps/jbVV8wjMCnb47XMv7"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-address__item footer-address__item--append">
+                  <a
+                    class="link footer-address__link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a class="link footer-address__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-social">
+            <p class="footer-social__text">присоединяйтесь</p>
+            <ul class="list footer-social__list">
+              <li class="footer-social__item footer-social__item--append">
+                <a class="footer-social__link" href="">
+                  <svg
+                    class="social-icon footer-social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address__item footer-address__item--append">
-                <a
-                  class="link footer-address__link"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="footer-social__item footer-social__item--append">
+                <a class="footer-social__link" href=""
+                  ><svg
+                    class="social-icon footer-social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="footer-address__item">
-                <a class="link footer-address__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="footer-social__item footer-social__item--append">
+                <a class="footer-social__link" href=""
+                  ><svg
+                    class="social-icon footer-social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item">
+                <a class="footer-social__link" href=""
+                  ><svg
+                    class="social-icon footer-social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
 
-        <div class="footer-social">
-          <p class="footer-social__text">присоединяйтесь</p>
-          <ul class="list footer-social__list">
-            <li class="footer-social__item footer-social__item--append">
-              <a class="footer-social__link" href="">
-                <svg
-                  class="social-icon footer-social__icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item footer-social__item--append">
-              <a class="footer-social__link" href=""
-                ><svg
-                  class="social-icon footer-social__icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="footer-social__item footer-social__item--append">
-              <a class="footer-social__link" href=""
-                ><svg
-                  class="social-icon footer-social__icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href=""
-                ><svg
-                  class="social-icon footer-social__icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div> -->
+        <!-- form -->
 
-    <!-- form -->
-
-    <!-- <form class="form" action="#">
-          <div class="footer-form-box">
+        <form class="form" action="#">
+          <div class="footer-form-box footer-form-box--uppend">
             <div class="footer-form">
               <p class="footer-form__label">Подпишитесь на рассылку</p>
               <input
@@ -606,7 +755,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- modal -->
 
