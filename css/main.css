@@ -546,6 +546,10 @@ body {
   background-color: transparent;
 }
 
+.button-icon:hover, .button-icon:focus {
+  fill: #2196f3;
+}
+
 .icon-cross {
   display: none;
 }
@@ -559,7 +563,7 @@ body {
 }
 
 .mobile-menu {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -569,6 +573,10 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #ffffff;
+}
+
+.mobile-menu.is-open {
+  display: none;
 }
 
 .mobile-menu__container {
@@ -648,6 +656,7 @@ body {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  width: 100%;
   color: #2196f3;
 }
 
