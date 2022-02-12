@@ -30,8 +30,8 @@
   transform: translate(-50%, -50%) scaleX(1);
   transition: $primary-transition;
 
-  width: 528px;
-  min-height: 581px;
+  width: 90vw;
+  min-height: 609px;
 
   padding: 40px;
 
@@ -45,6 +45,15 @@
   /* animation-iteration-count: 1; */
 
   background-color: $primary-white-color;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-close {
@@ -179,13 +188,17 @@
   display: inline-flex;
   align-items: center;
 
-  margin-left: 10px;
-
-  font-size: $primary-font-size;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(24 / 12);
   letter-spacing: $primary-letter-spacing;
 
   color: $paragraph-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: $primary-font-size;
+    line-height: calc(24 / 14);
+    margin: 0 auto;
+  }
 }
 
 .form-checkbox__input {
