@@ -27,7 +27,7 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo link" href="/index.html"
+          <a class="logo link" href="./index.html"
             ><span class="logo__text">Web</span>Studio</a
           >
 
@@ -67,19 +67,15 @@
 
         <button
           type="button"
-          class="menu__button"
+          class="menu-open__button"
           aria-expanded="false"
           data-menu-button
         >
           <svg
-            width="18px"
-            height="18px"
+            width="25px"
+            height="25px"
             aria-label="Переключатель мобильного меню"
           >
-            <use
-              class="button-icon icon-cross"
-              href="./images/icons.svg#icon-Vector"
-            ></use>
             <use
               class="button-icon icon-menu"
               href="./images/icons.svg#icon-menu"
@@ -90,67 +86,93 @@
 
       <div class="mobile-menu is-open" data-mobile-menu>
         <div class="container mobile-menu__container">
-          <ul class="list menu-nav__list">
-            <li class="menu-nav__item">
-              <a class="link menu-nav__link" href="./index.html">Студия</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="link menu-nav__link" href="./portfolio.html"
-                >Портфолио</a
+          <div class="mobile-menu-box">
+            <button
+              type="button"
+              class="menu-close__button"
+              aria-expanded="false"
+              data-menu-button
+            >
+              <svg
+                width="18px"
+                height="18px"
+                aria-label="Переключатель мобильного меню"
               >
-            </li>
-            <li class="menu-nav__item">
-              <a class="link menu-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
+                <use
+                  class="button-icon icon-cross"
+                  href="./images/icons.svg#icon-Vector"
+                ></use>
+              </svg>
+            </button>
 
-          <ul class="list menu-contacts__list is-open">
-            <li class="menu-contacts__item">
-              <a
-                class="link menu-contacts__link menu-contacts__link--accent-color"
-                href="tel:+380961111111"
-              >
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li class="menu-contacts__item">
-              <a
-                class="link menu-contacts__link menu-contacts__link--grey-color"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
+            <ul class="list menu-nav__list">
+              <li class="menu-nav__item">
+                <a class="link menu-nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="menu-nav__item">
+                <a
+                  class="link menu-nav__link menu-nav__link--active"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-nav__item">
+                <a class="link menu-nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
 
-          <ul class="menu-social__list">
-            <li class="menu-social__item">
-              <a
-                class="link menu-social__link menu-social__link--overlay"
-                href="https://www.instagram.com"
-                >Instagram</a
-              >
-            </li>
+          <div class="mobile-menu-box">
+            <ul class="list menu-contacts__list is-open">
+              <li class="menu-contacts__item">
+                <a
+                  class="link menu-contacts__link menu-contacts__link--accent-color"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-contacts__item">
+                <a
+                  class="link menu-contacts__link menu-contacts__link--grey-color"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
 
-            <li class="menu-social__item">
-              <a
-                class="link menu-social__link menu-social__link--overlay"
-                href="https://twitter.com"
-                >Twitter</a
-              >
-            </li>
-            <li class="menu-social__item">
-              <a
-                class="link menu-social__link menu-social__link--overlay"
-                href="https://www.facebook.com"
-                >Facebook</a
-              >
-            </li>
-            <li class="menu-social__item">
-              <a class="link menu-social__link" href="https://www.linkedin.com"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
+            <ul class="menu-social__list">
+              <li class="menu-social__item">
+                <a
+                  class="link menu-social__link menu-social__link--overlay"
+                  href="https://www.instagram.com"
+                  >Instagram</a
+                >
+              </li>
+
+              <li class="menu-social__item">
+                <a
+                  class="link menu-social__link menu-social__link--overlay"
+                  href="https://twitter.com"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a
+                  class="link menu-social__link menu-social__link--overlay"
+                  href="https://www.facebook.com"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a
+                  class="link menu-social__link"
+                  href="https://www.linkedin.com"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
