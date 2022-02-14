@@ -156,6 +156,10 @@ body {
   fill: #2196f3;
 }
 
+.icon-cross {
+  display: none;
+}
+
 .is-open .icon-cross {
   display: block;
 }
